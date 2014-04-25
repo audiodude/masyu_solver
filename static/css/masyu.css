@@ -1,0 +1,108 @@
+.puzzle {
+
+}
+
+.row {
+
+}
+
+.square {
+	border: 1px solid #ccc;
+	display: inline-block;
+  height: 42px;
+	margin: -2.5px -2.5px;
+  position: relative;
+  width: 42px;
+	z-index: 0;
+}
+
+.hz:after {
+	border-bottom: 2px solid #aaa;
+  content: '';
+	left: -1px;
+  position: absolute;
+  top: 20px;
+	width: 44px;
+	z-index: 10;
+}
+
+.vr:after {
+  border-left: 2px solid #aaa;
+  content: '';
+  height: 44px;
+  left: 20px;
+  position: absolute;
+	top: -1px;
+  z-index: 10;
+}
+
+.sw:after {
+  border-top: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+  content: '';
+	height: 20px;
+	left: -1px;
+	position: absolute;
+	top: 20px;
+	width: 21px;
+	z-index: 10;
+}
+
+.se:after {
+  border-top: 2px solid #aaa;
+	border-left: 2px solid #aaa;
+  content: '';
+	height: 20px;
+	left: 20px;
+	position: absolute;
+	top: 20px;
+	width: 20px;
+	z-index: 10;
+}
+
+.nw:after {
+  border-bottom: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  content: '';
+	height: 20px;
+	left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  z-index: 10;
+}
+
+.ne:after {
+  border-bottom: 2px solid #aaa;
+  border-left: 2px solid #aaa;
+  content: '';
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+	z-index: 10;
+}
+
+.bl:before {
+	background-color: #000;
+  border: 2px solid #000;
+  border-radius: 26px;
+	content: '';
+	height: 26px;
+	left: 6px;
+	position: absolute;
+  top: 6px;
+	width: 26px;
+}
+
+.wh:before {
+  border: 2px solid #000;
+  border-radius: 26px;
+	content: '';
+	height: 26px;
+	left: 6px;
+	position: absolute;
+  top: 6px;
+	width: 26px;
+}
